@@ -41,14 +41,14 @@ extension UIView {
     }
     
     @discardableResult
-    open func withHeight(_ height: CGFloat) -> UIView {
+    open func withHeight(_ height: CGFloat) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = true
         return self
     }
     
     @discardableResult
-    open func withWidth(_ width: CGFloat) -> UIView {
+    open func withWidth(_ width: CGFloat) -> Self {
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: width).isActive = true
         return self

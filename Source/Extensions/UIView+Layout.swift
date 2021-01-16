@@ -8,7 +8,6 @@
 
 import UIKit
 
-@available(iOS 11.0, tvOS 11.0, *)
 public enum Anchor {
     case top(_ top: NSLayoutYAxisAnchor, constant: CGFloat = 0)
     case leading(_ leading: NSLayoutXAxisAnchor, constant: CGFloat = 0)
@@ -19,7 +18,6 @@ public enum Anchor {
 }
 
 // Reference Video: https://youtu.be/iqpAP7s3b-8
-@available(iOS 11.0, tvOS 11.0, *)
 extension UIView {
     
     @discardableResult

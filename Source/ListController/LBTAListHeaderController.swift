@@ -18,6 +18,5 @@ import UIKit
  H: the header type above the section of cells.
  
  */
-@available(iOS 11.0, tvOS 11.0, *)
 open class LBTAListHeaderController<T: LBTAListCell<U>, U, H: UICollectionReusableView>: LBTAListHeaderFooterController<T, U, H, UICollectionReusableView> {
 }

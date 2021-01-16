@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "LBTATools",
+    platforms: [.iOS(.v12), .tvOS(.v11)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -22,9 +23,6 @@ let package = Package(
             name: "LBTATools",
             dependencies: [],
             path: "Source"
-        ),
-        .testTarget(
-            name: "LBTAToolsTests",
-            dependencies: ["LBTATools"]),
+        )
     ]
 )
